@@ -7,6 +7,16 @@
     margin: 0;
 }
 
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+@media(prefers-reduced-motion) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+}
+
 body {
     background-color: #ffffff;
     overflow-x: hidden;
@@ -1218,7 +1228,8 @@ span.social-follow > a:hover {
     
 }
 
-@media only screen and (min-device-width: 375px) and (orientation:portrait) {
+
+@media only screen and (max-device-width: 375px) and (orientation:portrait) {
     img.username-phone-border {
         top: -9px;
         left: -15px;
@@ -1230,6 +1241,19 @@ span.social-follow > a:hover {
     }
     div.rounded-layer-one {
         left: -42px;
+    }
+}
+
+
+@media only screen and (max-device-width: 414px) and (orientation:portrait) {
+    img.username-phone-border {
+        top: -9px;
+        left: 4px;
+    }
+
+    img.phone-mockup {
+        top: -6px;
+        left: 14px;
     }
 }
 
