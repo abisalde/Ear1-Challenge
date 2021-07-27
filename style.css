@@ -52,3 +52,42 @@ a {
 li {
     list-style: none;
 }
+
+.wrapper {
+    width: 100vw;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header {
+    height: 3.75rem;
+    padding: 0 2.125rem;
+}
+
+/*** RESPONSIVE SCREENS  ***/
+
+@media only screen and (min-width: 576px) {
+    .wrapper {
+        max-width: 540px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 720px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        max-width: 950px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        max-width: 1120px;
+    }
+}
