@@ -24,7 +24,7 @@ body {
     overflow-x: hidden;
 }
 
-/******** ================  GLOBAL STYLE ================== ********/
+/** GLOBAL STYLE **/
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -33,6 +33,8 @@ h2 {
     color: #242164;
 }
 
+header,
+article,
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -42,7 +44,7 @@ p {
 }
 
 img {
-    display: block;
+    vertical-align: middle;
 }
 
 a {
@@ -62,8 +64,26 @@ li {
 }
 
 header {
-    height: 3.75rem;
-    padding: 0 2.125rem;
+    padding: 2.125rem 0rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.main-nav {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+}
+
+span.navbar-toggle {
+    display: none;
 }
 
 /*** RESPONSIVE SCREENS  ***/
