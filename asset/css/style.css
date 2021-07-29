@@ -24,6 +24,12 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+    font-family: 'Helvetica';
+    src: local('Helvetica'),
+        url('/asset/font/Helvetica-Bold.ttf') format('truetype');
+}
+
 /** GLOBAL STYLE **/
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -84,7 +90,8 @@ nav {
 
 div.main-nav {
     display: grid;
-    grid-template-columns: 5fr 1fr;
+    grid-template-columns: 1.5fr 3fr;
+    column-gap: 1.5rem;
     align-items: center;
 }
 
@@ -103,10 +110,17 @@ div.ear1-logo {
 }
 
 .ear1-logo h1 {
-    font-size: 1.6062rem;
-    font-family: Helvetica, sans-serif;
-    padding-left: 0.625rem;
+    font-size: 1.8062rem;
+    font-family: 'Helvetica';
+    padding-left: 0.512rem;
     color: #00070f;
+    letter-spacing: -0.04rem;
+}
+
+ul.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*** RESPONSIVE SCREENS  ***/
