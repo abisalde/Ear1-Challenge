@@ -91,7 +91,7 @@ nav {
 div.main-nav {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
-    column-gap: 1.5rem;
+    column-gap: 5.625rem;
     align-items: center;
 }
 
@@ -121,6 +121,13 @@ ul.nav-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav-links {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.125rem;
 }
 
 /*** RESPONSIVE SCREENS  ***/
