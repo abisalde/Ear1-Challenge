@@ -439,6 +439,85 @@ span img.ear1-fantick {
 
 /** EAR1 SECTION STYLE END **/
 
+/** EAR1 FEATURES STYLE START **/
+section.ear1-features {
+    position: relative;
+    margin-top: 7.51rem;
+}
+
+.ear1-features-section {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.ear1-features-section .messaging {
+    height: 20.625rem;
+    flex: 0 0 40%;
+    width: 40%;
+    border-radius: 2.1875rem;
+    box-shadow: 0 0.187rem 1.3556rem rgba(0, 0, 0, 0.1);
+    font-family: 'Montserrat';
+}
+
+.messaging .messaging-title {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--btn-color);
+    color: #fff;
+    padding: 1.625rem 1.413rem 1rem;
+    font-size: 1.352rem;
+    border-radius: 2.2596rem 2.2596rem 0 0;
+}
+
+.messaging .messaging-title span {
+    background: rgba(255, 255, 255, 0.89);
+    border-radius: 60%;
+    text-align: center;
+    color: var(--btn-color);
+    padding: 0.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.messaging .messaging-list {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.125rem 1.413rem 1rem;
+}
+
+.messaging-list .messaging-profile {
+    display: flex;
+    width: 100%;
+    height: 3.875rem;
+}
+
+.messaging-profile img {
+    border-radius: 50%;
+    width: 2.25rem;
+    height: 2.25rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.messaging-profile .messaging-profile-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 0.0125rem solid #bdbdbd;
+    margin-left: 0.75rem;
+}
+
+.messaging-profile .messaging-profile-text.last-child {
+    border: none;
+}
+
+/** EAR1 FEATURES STYLE END **/
+
 /*** RESPONSIVE SCREENS  ***/
 
 @media only screen and (min-width: 576px) {
