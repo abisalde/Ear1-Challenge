@@ -34,6 +34,8 @@ body {
     --text-color: #242164;
     --btn-color: #00bf69;
     --hero-bg-color: rgba(0, 191, 105, 0.1);
+    --subtitle-text-color: rgba(36, 33, 100, 0.84);
+    --input-form-color: rgba(36, 33, 100, 0.54);
 }
 
 /** GLOBAL STYLE **/
@@ -42,14 +44,6 @@ article,
 div,
 section {
     display: block;
-}
-
-p {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: rgba(36, 33, 100, 0.84);
 }
 
 img {
@@ -154,6 +148,8 @@ nav button.btn.btn-download {
     font-weight: 600;
     border-radius: 3.125rem;
     background-color: var(--btn-color);
+    position: relative;
+    z-index: 999;
 }
 /** HEADER STYLE ENDS **/
 
@@ -178,7 +174,7 @@ section.hero {
 
 .phone-cover {
     width: 45.333%;
-    margin-top: -2.7625rem;
+    margin-top: -2.3625rem;
 }
 
 .phone-cover img.ear1-mockup {
@@ -186,14 +182,207 @@ section.hero {
     transform: rotateX(-10deg);
 }
 
+.background-phone-cover {
+    position: absolute;
+    background: var(--hero-bg-color);
+    width: 56.25rem;
+    height: 56.25rem;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(4.45%, -54.345%);
+    z-index: -9999;
+}
+
 h2.welcome-text {
     font-family: 'Montserrat';
     font-weight: 700;
-    line-height: 1.35;
+    line-height: 1.25;
     text-overflow: clip;
     color: var(--text-color);
 }
+
+p.description-text {
+    color: var(--subtitle-text-color);
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 1rem;
+    padding: 1.9125rem 0rem 1.7312rem;
+    line-height: 1.65;
+}
+
+.download-form {
+    background: #fff;
+    width: 90%;
+    border-radius: 3.125rem;
+    display: flex;
+    flex-grow: 1;
+    height: 3.525rem;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.download-form span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    color: var(--text-color);
+    border-right: 0.02rem solid #bdbdbd;
+    padding: 0 0.51rem;
+    font-size: 0.852rem;
+    font-family: 'Montserrat';
+}
+
+span i.fa-sort-down {
+    padding-left: 0.532rem;
+    padding-bottom: 0.6912rem;
+}
+
+.download-form input.form-control {
+    display: block;
+    width: 50%;
+    color: var(--input-form-color);
+    font-family: 'Montserrat';
+    font-size: 0.9123rem;
+    padding-left: 0.95rem;
+    border: none;
+    border-top-left-radius: 3.125rem;
+    border-bottom-left-radius: 3.125rem;
+}
+
+.download-form button.btn.num-btn-download {
+    background-color: var(--btn-color);
+    border-radius: 0 3.125rem 3.125rem 0;
+    width: 30%;
+    font-weight: 700;
+}
+
+.watch-video {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding-top: 2.825rem;
+    font-family: 'Montserrat';
+}
+
+.watch-video h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--btn-color);
+    padding-left: 0.8512rem;
+}
+
+i.fa-play {
+    border: 0.06rem solid #bdbdbd;
+    border-radius: 50%;
+    padding: 0.752rem;
+    color: var(--btn-color);
+    font-size: 0.7321rem;
+}
+
 /** HERO STYLE END **/
+
+/** HOW IT WORKS STYLE BEGIN **/
+section.about {
+    margin-top: 12.3231rem;
+    position: relative;
+}
+
+.about h2 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 1.9325rem;
+    color: var(--text-color);
+}
+
+.about-content {
+    padding-top: 5.6125rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+
+.about-content div.username {
+    width: 38.633%;
+}
+
+.username div.username-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img.set-username {
+    width: 100%;
+}
+
+.rounded-layer-one {
+    position: absolute;
+    background: var(--hero-bg-color);
+    width: 43.75rem;
+    height: 43.75rem;
+    border-radius: 50%;
+    top: 50%;
+    right: 50%;
+    z-index: -9;
+}
+
+.about-content div.ear1-registration {
+    width: 56.533%;
+}
+
+.ear1-registration {
+    position: absolute;
+    overflow-y: scroll;
+    top: 50%;
+    left: 50%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    height: 36.345rem;
+    padding-left: 1rem;
+}
+
+.ear1-registration::-webkit-scrollbar {
+    display: none;
+}
+
+.registration-steps {
+    width: inherit;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+    padding-top: 1rem;
+}
+
+.registration-steps h6 {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 0 0 1.12rem;
+}
+
+.registration-steps h2 {
+    padding: 0 0 0.75rem;
+    text-align: start;
+}
+
+.registration-steps p {
+    font-weight: 300;
+    font-size: 0.9123rem;
+}
+
+.ear1-registration .registration-steps:nth-of-type(2) {
+    padding: 6.546rem 0rem;
+}
+
+.download-ear1.about-btn {
+    padding-top: 1.752rem;
+    padding-bottom: 2.625rem;
+}
+
+.btn-google-play {
+    padding-left: 1.435rem;
+}
+
+/** HOW IT WORKS STYLE END **/
 
 /*** RESPONSIVE SCREENS  ***/
 
@@ -211,8 +400,17 @@ h2.welcome-text {
     .download-ear1.hero-btn {
         display: none;
     }
+
     h2.welcome-text {
         font-size: 1.625rem;
+    }
+
+    .rounded-layer-one {
+        transform: translate(-30.765%, -28.951%);
+    }
+
+    .ear1-registration {
+        transform: translate(2%, -8.326%);
     }
 }
 
@@ -224,6 +422,14 @@ h2.welcome-text {
     h2.welcome-text {
         font-size: 2.125rem;
     }
+
+    .rounded-layer-one {
+        transform: translate(-39.765%, -29.95%);
+    }
+
+    .ear1-registration {
+        transform: translate(2%, -15.326%);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -232,9 +438,24 @@ h2.welcome-text {
     }
 
     h2.welcome-text {
-        font-size: 2.4825rem;
+        font-size: 2.5825rem;
+    }
+
+    .rounded-layer-one {
+        transform: translate(-45.865%, -30.695%);
+    }
+
+    .ear1-registration {
+        transform: translate(2%, -19%);
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .background-phone-cover {
+        display: none;
+    }
+
+    .download-form {
+        display: none;
+    }
 }
