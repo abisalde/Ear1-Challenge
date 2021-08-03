@@ -706,18 +706,94 @@ section.faqs {
     justify-content: space-between;
     align-items: center;
 }
+
+.accordion-header h5 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.faqs-accordion .accordion-main.active {
+    border: none;
+    outline: none;
+    box-shadow: 0 0.25rem 1.875rem rgba(0, 0, 0, 0.1);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.accordion-main .accordion-body {
+    padding-top: 1.625rem;
+}
+
+.accordion-body p {
+    font-size: 0.875rem;
+    color: var(--subtitle-text-color);
+}
 /** EAR1 FAQS STYLE END **/
+
+/** EAR1 SOCIAL REVOLUTION STYLE START **/
+section.social-revolution {
+    margin-top: 6.51rem;
+    position: relative;
+    width: 100%;
+}
+
+.social-revolution .social-revolution-container {
+    display: flex;
+    flex-flow: row;
+    color: var(--text-color);
+    font-family: 'Montserrat';
+    border-radius: 1.5625rem;
+    line-height: 1.85;
+    background: var(--hero-bg-color);
+    line-height: 1.6;
+    position: relative;
+}
+
+.social-revolution-container .social-revolution {
+    width: 52.33%;
+}
+
+.social-revolution p {
+    padding: 1.5rem 0rem 2.5rem 0rem;
+    max-width: 23.5625rem;
+    line-height: 1.75;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.social-revolution-container .social-revolution-img {
+    width: 48.333%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.social-revolution-img img {
+    width: 100%;
+}
+
+.social-revolution .download-social-btn {
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+}
+
+/** EAR1 SOCIAL REVOLUTION STYLE END **/
 
 /** FOOTER SECTION START **/
 footer.ear1-footer {
     width: 100%;
     margin-bottom: 3em;
-    margin-top: 5.51em;
+    margin-top: 7.51em;
 }
 
 .ear1-footer .footer-container {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+    font-family: 'Montserrat';
+    color: var(--subtitle-text-color);
+    justify-content: space-between;
 }
 
 .ear1-footer.footer-logo {
@@ -725,15 +801,74 @@ footer.ear1-footer {
 }
 
 .ear1-footer.links-footer {
-    width: 25%;
+    width: 19%;
 }
 
 .ear1-footer.links-legal {
-    width: 25%;
+    width: 19%;
 }
 
 .ear1-footer-ear1-footer {
-    width: 25%;
+    width: 37%;
+}
+
+.ear1-footer.footer-logo a img {
+    width: 1.8325rem;
+    height: 2.0725rem;
+}
+
+.ear1-footer.footer-logo p {
+    padding-top: 1.85rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.ear1-footer.footer-logo .follow-us-container {
+    padding-top: 2.25rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.follow-us-container span.social-follow {
+    display: block;
+    padding-top: 0.325rem;
+}
+
+.social-follow a i {
+    color: var(--btn-color);
+    padding-right: 0.625rem;
+}
+
+.ear1-footer.links-footer,
+.ear1-footer.links-legal,
+.footer-download {
+    padding-top: 1rem;
+}
+
+.ear1-footer.links-footer h6,
+.ear1-footer.links-legal h6,
+.footer-download h6 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.ear1-footer.links-footer .footer-link,
+.ear1-footer.links-legal .footer-legal,
+.footer-download.ear1-footer .footer-download-btn {
+    padding-top: 1.85rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+.footer-link li,
+.links-legal a p {
+    color: var(--subtitle-text-color);
+    padding-bottom: 0.85rem;
+}
+
+.footer-link li a {
+    color: var(--subtitle-text-color);
 }
 
 /** FOOTER SECTION END **/
@@ -786,6 +921,18 @@ footer.ear1-footer {
     .heading-get-paid h2 {
         font-size: 1.65rem;
     }
+
+    .social-revolution-container {
+        padding: 2.81rem 4.56rem 2rem;
+    }
+
+    .social-revolution-container .social-revolution h2 {
+        font-size: 1.65rem;
+    }
+
+    .social-revolution-container .social-revolution-img {
+        transform: translate(-0.5%, -8%);
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -833,6 +980,14 @@ footer.ear1-footer {
     .avatar h2 {
         font-size: 2.25rem;
     }
+
+    .social-revolution-container .social-revolution h2 {
+        font-size: 2.4rem;
+    }
+
+    .social-revolution-container .social-revolution-img {
+        transform: translate(-2.5%, -26.95%);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -867,19 +1022,106 @@ footer.ear1-footer {
     .connecting-around-world h2 {
         font-size: 2.75rem;
     }
+
+    .social-revolution-container .social-revolution-img {
+        transform: translate(3%, -46%);
+    }
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
-    .background-phone-cover {
+    .background-phone-cover,
+    .download-form,
+    .rounded-layer-one,
+    ul.nav-menu,
+    nav button.btn.btn-download {
         display: none;
     }
 
-    .download-form {
-        display: none;
+    span.navbar-toggle {
+        display: block;
     }
 
-    .rounded-layer-one {
-        display: none;
+    section.hero {
+        padding-top: 8.5rem;
+    }
+
+    .hero-content {
+        text-align: center;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        padding-right: 0rem;
+    }
+
+    .hero-content .hero-heading {
+        width: 100%;
+    }
+
+    .download-ear1.hero-btn {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .download-ear1.hero-btn .download-google-play {
+        padding-left: 0.21rem;
+    }
+
+    .watch-video {
+        justify-content: center;
+    }
+
+    .phone-cover {
+        width: 100%;
+        margin-top: 2.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .phone-cover img.ear1-mockup {
+        transform: rotateX(2deg);
+    }
+
+    section.about {
+        margin-top: 6.5rem;
+    }
+
+    .about h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-content {
+        flex-flow: column;
+    }
+
+    .about-content div.username {
+        width: 100%;
+    }
+
+    .about-content div.ear1-registration {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        top: 0%;
+        left: 0%;
+        padding-left: 0rem;
+        height: 20rem;
+    }
+
+    .ear1-registration .registration-steps {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .download-ear1.about-btn {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%;
     }
 
     section.ear1-section > .wrapper {
@@ -890,5 +1132,137 @@ footer.ear1-footer {
     .background-ear1-section {
         border-radius: 0rem;
         padding: 1.325rem 0.652rem;
+    }
+
+    .background-ear1-section h2 {
+        font-size: 1.5rem;
+        flex-flow: column;
+    }
+
+    .download-ear1-section {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    section.ear1-features {
+        margin-top: 4.51rem;
+    }
+
+    .ear1-features .ear1-features-section {
+        flex-flow: column;
+    }
+
+    .ear1-features-section .messaging,
+    .ear1-features-section .features-text {
+        width: 100%;
+    }
+
+    .features-text {
+        text-align: center;
+    }
+
+    .features-text h2 {
+        padding-right: 0rem;
+    }
+
+    section.connecting-people {
+        margin-top: 3.51rem;
+    }
+
+    .connecting-people .connect-bg-color {
+        flex-flow: column;
+        padding: 2.5rem 0rem;
+    }
+
+    .connect-bg-color .connect-pattern,
+    .connect-bg-color .connecting-around-world {
+        width: 100%;
+    }
+
+    .connecting-around-world {
+        padding-top: 2.6rem;
+        text-align: center;
+    }
+
+    section.ear1-get-paid {
+        margin-top: 3.51rem;
+    }
+
+    .ear1-get-paid .get-paid-container {
+        flex-flow: column;
+    }
+
+    .get-paid-container .get-paid-img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .get-paid-container .heading-get-paid {
+        width: 100%;
+        padding-top: 4.32rem;
+        text-align: center;
+    }
+
+    section.social-revolution {
+        margin-top: 3.51rem;
+    }
+
+    section.social-revolution > .wrapper {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .social-revolution .social-revolution-container {
+        border-radius: 0rem;
+        padding: 1.325rem 0.652rem;
+    }
+
+    .social-revolution-container .social-revolution {
+        text-align: center;
+        width: 100%;
+    }
+
+    .social-revolution-container .social-revolution-img {
+        display: none;
+    }
+
+    .download-social-btn {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    footer.ear1-footer {
+        margin-top: 3.51rem;
+    }
+
+    .ear1-footer.links-footer,
+    .ear1-footer.links-legal,
+    .footer-download.ear1-footer {
+        padding-top: 2.4rem;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 414px) {
+    .ear1-footer.footer-logo,
+    .ear1-footer.links-footer,
+    .ear1-footer.links-legal,
+    .footer-download.ear1-footer {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+    .ear1-footer.footer-logo,
+    .ear1-footer.links-footer,
+    .ear1-footer.links-legal {
+        width: 50%;
+    }
+
+    .footer-download.ear1-footer {
+        width: 100%;
     }
 }
