@@ -519,7 +519,7 @@ section.ear1-features {
 
 .messaging-profile-text .profile-name,
 .notification-time {
-    color: var(--text-color);
+    color: var(--subtitle-text-color);
     line-height: 1.5;
     font-size: 0.875rem;
     font-weight: 300;
@@ -571,6 +571,7 @@ section.ear1-features {
     font-weight: 300;
     padding-top: 2rem;
     line-height: 1.6;
+    color: var(--subtitle-text-color);
 }
 
 section.connecting-people {
@@ -611,6 +612,131 @@ section.connecting-people {
 }
 
 /** EAR1 FEATURES STYLE END **/
+
+/** EAR1 GET PAID SECTION STYLE START **/
+section.ear1-get-paid {
+    margin-top: 5.51rem;
+    position: relative;
+    width: 100%;
+}
+
+.ear1-get-paid .get-paid-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+}
+
+.get-paid-container .get-paid-img {
+    width: 50.5%;
+}
+
+.get-paid-img .paid-img-pattern img {
+    width: 100%;
+}
+
+.get-paid-container .heading-get-paid {
+    width: 45.5%;
+}
+
+.heading-get-paid {
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: -3rem;
+    line-height: 1.65;
+}
+
+.heading-get-paid p {
+    color: var(--subtitle-text-color);
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.7;
+    padding-top: 1.875rem;
+}
+
+.heading-get-paid .download-getpaid-btn {
+    display: none;
+}
+
+/** EAR1 GET PAID SECTION STYLE END **/
+
+/** EAR1 FAQS STYLE START **/
+section.faqs {
+    margin-top: 5.51rem;
+    position: relative;
+    width: 100%;
+}
+
+.faqs .faqs-container {
+    max-width: 53.5rem;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    color: var(--text-color);
+}
+
+.faqs-container .avatar {
+    text-align: center;
+    line-height: 1.65;
+}
+
+.avatar h2 {
+    padding-top: 0.65rem;
+}
+
+.faqs-container .faqs-accordion {
+    padding-top: 2.42rem;
+}
+
+.faqs-accordion section.accordion-main {
+    margin-bottom: 1.5rem;
+    border: 0.0625rem solid #bdbdbd;
+    border-radius: 3.125rem;
+    min-height: 6.125rem;
+    padding: 0.75rem 2.5rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.accordion-main .accordion-header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/** EAR1 FAQS STYLE END **/
+
+/** FOOTER SECTION START **/
+footer.ear1-footer {
+    width: 100%;
+    margin-bottom: 3em;
+    margin-top: 5.51em;
+}
+
+.ear1-footer .footer-container {
+    display: flex;
+    flex-flow: row;
+}
+
+.ear1-footer.footer-logo {
+    width: 25%;
+}
+
+.ear1-footer.links-footer {
+    width: 25%;
+}
+
+.ear1-footer.links-legal {
+    width: 25%;
+}
+
+.ear1-footer-ear1-footer {
+    width: 25%;
+}
+
+/** FOOTER SECTION END **/
 
 /*** RESPONSIVE SCREENS  ***/
 
@@ -656,6 +782,10 @@ section.connecting-people {
     .connecting-around-world h2 {
         font-size: 1.75rem;
     }
+
+    .heading-get-paid h2 {
+        font-size: 1.65rem;
+    }
 }
 
 @media only screen and (min-width: 992px) {
@@ -694,6 +824,14 @@ section.connecting-people {
 
     .connecting-around-world h2 {
         font-size: 2.35rem;
+    }
+
+    .heading-get-paid h2 {
+        font-size: 2.25rem;
+    }
+
+    .avatar h2 {
+        font-size: 2.25rem;
     }
 }
 
