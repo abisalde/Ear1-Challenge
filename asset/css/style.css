@@ -86,6 +86,7 @@ header {
     display: grid;
     align-items: center;
     position: absolute;
+    z-index: 9999;
     width: 100%;
 }
 
@@ -111,6 +112,7 @@ span.navbar-toggle {
 div.ear1-logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .ear1-logo img {
@@ -133,12 +135,26 @@ ul.nav-menu {
     padding: 0rem 1.35rem;
 }
 
+ul.mobile-nav-menu {
+    display: none;
+}
+
 .nav-links {
     font-family: 'Montserrat';
     font-weight: 500;
     font-size: 1rem;
     line-height: 1;
     color: var(--text-color);
+}
+
+.nav-links:hover {
+    color: var(--subtitle-text-color);
+    background-color: var(--hero-bg-color);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    border-radius: 0.625rem;
+    opacity: 0.7;
 }
 
 nav button.btn.btn-download {
@@ -149,7 +165,6 @@ nav button.btn.btn-download {
     border-radius: 3.125rem;
     background-color: var(--btn-color);
     position: relative;
-    z-index: 999;
 }
 /** HEADER STYLE ENDS **/
 
@@ -1028,13 +1043,28 @@ footer.ear1-footer {
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (min-width: 200px) and (max-width: 767px) {
     .background-phone-cover,
     .download-form,
     .rounded-layer-one,
     ul.nav-menu,
     nav button.btn.btn-download {
         display: none;
+    }
+
+    ul.mobile-nav-menu.active {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+        top: 10%;
+        background: #fff;
+        min-height: 100vh;
+    }
+
+    .mobile-nav-menu.active li {
+        padding: 2rem 0;
     }
 
     span.navbar-toggle {
