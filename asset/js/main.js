@@ -8,3 +8,8 @@ const openMenu = (e) => {
 };
 
 navBar.addEventListener('click', openMenu);
+
+window.addEventListener('click', () => {
+    if (!navMenu.classList.contains('active')) return;
+    navMenu.classList.remove('active');
+});
