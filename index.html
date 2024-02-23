@@ -12,6 +12,7 @@
     <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.2/css/all.css "
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay " crossorigin="anonymous" />
 </head>
+<div class="wrap_all_elements">
 <!--        HEADER FOR NAV  -->
 <header>
     <div class="wrapper">
@@ -70,7 +71,7 @@
                         <div class="select-wrapper">
                             <div class="select-wrapper-inner">
                                 <div class="trigger_select">
-                                    <span>Nigeria (+234)</span>
+                                    <span>+234</span>
                                     <i class="fas fa-2x fa-sort-down"></i>
                                 </div>
                                 <div id="select_options"></div>
@@ -340,56 +341,60 @@
 
             </div>
             <div class="faqs-accordion">
-                <section class="accordion-main active">
-                    <div class="accordion-header">
+                <details class="accordion-main">
+                    <summary class="accordion-header">
                         <h5>What is the guarantee that my message would be replied?</h5>
                         <b>
-                            <!-- <span><i class="fas fa-angle-down"></i></span> -->
-                            <span><i class="fas fa-angle-up"></i></span>
+                            <span class="add-icon"><i class="fas fa-angle-down"></i></span>
+                            <!-- <span class="add-icon"><i class="fas fa-angle-up"></i></span> -->
                         </b>
-                    </div>
+                    </summary>
                     <div class="accordion-body">
-                        <p>It would definitely be replied because there is an incentive for the recipient of your
-                            message to
-                            make money when he or she does that.</p>
+                        <p>It would definitely be replied because there is an incentive for the recipient of your message to make money when he or she does that.</p>
                     </div>
-                </section>
-                <section class="accordion-main">
-                    <div class="accordion-header">
+                </details>
+
+                
+                <details class="accordion-main">
+                    <summary class="accordion-header">
                         <h5>What is your refund policy?</h5>
                         <b>
-                            <span><i class="fas fa-angle-down"></i></span>
+                            <span class="add-icon"><i class="fas fa-angle-down"></i></span>
                             <!-- <span><i class="fas fa-angle-up"></i></span> -->
                         </b>
-                    </div>
+                    </summary>
                     <div class="accordion-body">
-                        <p></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis optio, recusandae, ipsam qui voluptate inventore ullam facilis temporibus accusantium nesciunt debitis repellat? Architecto laborum culpa temporibus quam fuga ratione.</p>
                     </div>
-                </section>
-                <section class="accordion-main">
-                    <div class="accordion-header">
+                </details>
+
+
+                <details class="accordion-main">
+                    <summary class="accordion-header">
                         <h5>Are my personal details secured?</h5>
                         <b>
-                            <span><i class="fas fa-angle-down"></i></span>
+                            <span class="add-icon"><i class="fas fa-angle-down"></i></span>
                             <!-- <span><i class="fas fa-angle-up"></i></span> -->
                         </b>
-                    </div>
+                    </summary>
                     <div class="accordion-body">
-                        <p></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eligendi incidunt corrupti porro dicta dolorum, harum culpa officiis quod maiores est quam sed, magnam, debitis recusandae accusantium delectus voluptatibus doloremque!</p>
                     </div>
-                </section>
-                <section class="accordion-main">
-                    <div class="accordion-header">
+                </details>
+
+
+                <details class="accordion-main">
+                    <summary class="accordion-header">
                         <h5>How much is the service fee?</h5>
                         <b>
-                            <span><i class="fas fa-angle-down"></i></span>
+                            <span class="add-icon"><i class="fas fa-angle-down"></i></span>
                             <!-- <span><i class="fas fa-angle-up"></i></span> -->
                         </b>
-                    </div>
+                    </summary>
                     <div class="accordion-body">
-                        <p></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus et recusandae eligendi vel amet sapiente necessitatibus doloremque, sint deserunt expedita dolorem delectus ratione praesentium reiciendis minus quibusdam ut illum dolorum.</p>
                     </div>
-                </section>
+                </details>
             </div>
         </div>
     </div>
@@ -479,6 +484,8 @@
         </div>
     </div>
 </footer>
+</div>
 <script src="./asset/js/main.js"></script>
+<script src="./asset/js/data.js"></script>
 
 </html>
